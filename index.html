@@ -34,7 +34,7 @@
             <div class="card-body">
               <h5 class="card-title">Want To Say Hello?</h5>
               <p class="card-text">If you'd like to get in contact with me, you can send me email.</p>
-              <a class="btn btn-primary card-link" href="mailto:hello@ajcolson.com?subject=Contacting You From Your Website" target="_blank"><span class="material-symbols-rounded">mail</span> Email me</a>
+              <button class="btn btn-primary card-link" data-bs-toggle="modal" data-bs-target="#emailModal"><span class="material-symbols-rounded">mail</span> Email me</button>
             </div>
           </div>          
         </div>
@@ -59,7 +59,7 @@
       </div>
     </main>
     <footer class="pt-5 my-5 text-body-secondary border-top">
-      <span class="no-select"><a href=".">AJColson.com</a> | Last Updated: 2 July 2023</span>
+      <span class="no-select"><a href=".">AJColson.com</a> | Last Updated: 3 July 2023</span>
     </footer>
     <div class="modal fade" id="resumeConfirmModal" data-bs-keyboard="false" tabindex="-1" aria-labelledby="resumeConfirmModalLabel" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered">
@@ -75,6 +75,24 @@
           <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
             <a class="btn btn-primary" href="https://drive.proton.me/urls/NTCNFKECFR#gN6Qpvg9hsGN" target="_blank">Confirm</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="emailModal" data-bs-keyboard="false" tabindex="-1" aria-labelledby="emailModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="emailLabel">Email</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p>You can reach me for all inquiries at the following address:</p>
+            <div class="input-group">
+              <input type="text" class="form-control" placeholder="Email Address" aria-label="Email Address" value="hello@ajcolson.com" disabled>
+              <button id="copyEmailToClipboardBtn" class="btn btn-outline-secondary" type="button"><span class="material-symbols-rounded">content_copy</span></button>
+              <a class="btn btn-outline-secondary" href="mailto:hello@ajcolson.com" type="button"><span class="material-symbols-rounded">mail</span></a>
+            </div>
           </div>
         </div>
       </div>
