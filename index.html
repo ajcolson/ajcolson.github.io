@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html data-bs-theme="dark">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -63,8 +63,28 @@
         </div>
       </main>
       <footer class="pt-5 my-5 text-body-secondary border-top">
-        <span class="no-select"><a href=".">AJColson.com</a> | Last Updated: 10 Aug 2023</span>
+        <span class="no-select"><a href=".">AJColson.com</a> | Last Updated: 17 Aug 2023</span>
+        <div class="float-end no-select"><span class="material-symbols-rounded cursor-pointer" data-bs-toggle="modal" data-bs-target="#settingsModal">settings</span></div>
       </footer>
+    </div>
+    <div class="modal fade" id="settingsModal" data-bs-keyboard="false" tabindex="-1" aria-labelledby="settingsModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="settingsModalLabel">Site Settings</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div id="darkThemeToggle" class="form-check form-switch">
+              <input class="form-check-input cursor-pointer" type="checkbox" id="darkModeSwitch" checked>
+              <label class="form-check-label cursor-pointer no-select" for="darkModeSwitch">Dark Mode</label>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
     </div>
     <div class="modal fade" id="resumeConfirmModal" data-bs-keyboard="false" tabindex="-1" aria-labelledby="resumeConfirmModalLabel" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered">
