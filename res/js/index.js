@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", (e)=>{
   
   document.querySelector("#darkThemeToggle").addEventListener("click",(e)=>{
     var themeName = (document.querySelector("#darkModeSwitch").checked?"dark":"light")
-    __.setTheme(themeName)
+    __.Theme.setTheme(themeName)
     __.Config.set("themeName", themeName)
   });
 
