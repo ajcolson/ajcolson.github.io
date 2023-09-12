@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", (e)=>{
   console.log("Hello, World!")
   
   // Set the site theme
-  __.Theme.getThemeFromConfig()
+  __.Theme.loadThemeFromConfig()
   document.querySelector("#darkModeSwitch").checked = (__.Config.get("themeName") === "dark")
 
 
