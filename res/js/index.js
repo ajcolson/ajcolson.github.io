@@ -14,6 +14,14 @@ document.addEventListener("DOMContentLoaded", (e)=>{
     var themeName = (document.querySelector("#darkModeSwitch").checked?"dark":"light")
     __.Theme.setTheme(themeName)
     __.Config.set("themeName", themeName)
-  });
+  })
+
+  document.querySelector("#emailModal").addEventListener("show.bs.modal",function(){
+    document.querySelector("#emailAddrInput").value = "hello@ajcolson.com"
+  })
+
+  document.querySelector("#emailModal").addEventListener("hidden.bs.modal",function(){
+    document.querySelector("#emailAddrInput").value = ""
+  })
 
 })
