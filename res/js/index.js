@@ -18,10 +18,12 @@ document.addEventListener("DOMContentLoaded", (e)=>{
 
   document.querySelector("#emailModal").addEventListener("show.bs.modal",function(){
     document.querySelector("#emailAddrInput").value = "hello@ajcolson.com"
+    document.querySelector("#emailAddrLink").href = "mailto:hello@ajcolson.com"
   })
 
   document.querySelector("#emailModal").addEventListener("hidden.bs.modal",function(){
     document.querySelector("#emailAddrInput").value = ""
+    document.querySelector("#emailAddrLink").href = ""
   })
 
 })
