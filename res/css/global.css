@@ -11,3 +11,6 @@
 .cursor-pointer{
   cursor: pointer !important;
 }
+.hidden{
+  display: none !important;
+}
